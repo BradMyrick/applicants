@@ -18,7 +18,7 @@ function App() {
     setLoading(true);
     async function getBalance() {
       const response = await fetch(
-        `https://api.covalenthq.com/v1/43113/address/${address}/balances_v2/?key=${process.env.REACT_APP_API_KEY}`
+        `https://api.covalenthq.com/v1/43113/address/${address}/balances_v2/?key=ckey_d76f45538e9a4d00a68a0704090`
       );
       const data = await response.json();
       const contract = data.data.items.find(
