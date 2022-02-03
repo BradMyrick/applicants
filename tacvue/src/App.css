@@ -1,0 +1,93 @@
+:root {
+  --primary-green: #00cf00;
+  --secondary-accent: rgb(110, 42, 141);
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: #000000;
+  color: var(--primary-green);
+  font-family: 'Poppins';
+}
+
+.text-glow {
+  text-shadow: 0 0 80px rgba(129, 80, 161, 0.836),
+    0 0 32px rgba(156, 63, 175, 0.753);
+}
+
+.info-card {
+  height: 250px;
+  border: 3px solid #011401;
+  box-shadow: 10px 5px 10px rgb(115, 64, 138, 0.5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 3em;
+  align-items: center;
+}
+
+.loading {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.header .contract {
+  font-size: 1rem;
+  margin-top: 0.6em;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav .btn {
+  background-color: var(--secondary-accent);
+  padding: 0.7em;
+  border-radius: 1rem;
+  margin: 0.55em;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav .btn img {
+  margin-right: 8px;
+}
+
+.balance-info {
+  letter-spacing: 1px;
+  margin-top: 1.5em;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 525px) {
+  .balance-info {
+    font-size: 1.3rem;
+    margin-top: 1em;
+  }
+}
