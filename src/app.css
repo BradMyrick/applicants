@@ -1,0 +1,49 @@
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.app-heading {
+  text-align: center;
+  color: green;
+}
+.sub-heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+.examples {
+  opacity: 0.5;
+}
+
+.inputs {
+  width: 100%;
+}
+
+.sub-button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.totals {
+  text-align: center;
+  font-size: x-large;
+}
