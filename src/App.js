@@ -35,7 +35,8 @@ function App() {
     //getting balance of account
     const balance = await contract.balanceOf(userAddress);
     const balanceToString = balance.toString();
-    setBalance(balanceToString);
+    const formattedBalance = ethers.utils.formatUnits(balanceToString, 18)
+    setBalance(formattedBalance);
     //getting symbol of account
     const symbol = await contract.symbol();
     setSymbol(symbol);
