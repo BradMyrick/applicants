@@ -17,6 +17,9 @@ app.get('/getBalance', function (req, res) {
   .then((response) => {
     res.status(200).send(response.data.result);
   })
+  .catch((err) => {
+    console.log(err);
+  })
 });
 
 app.listen(port, () => {

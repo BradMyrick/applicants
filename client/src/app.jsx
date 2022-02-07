@@ -13,6 +13,9 @@ const App = (props) => {
       const amount = data.data / 100000000;
       setBalance(amount)
     })
+    .catch((err) => {
+      console.log(err);
+    })
   };
 
   return (
