@@ -1,0 +1,37 @@
+{
+  "name": "applicants",
+  "version": "1.0.0",
+  "description": "tacVue assessment",
+  "main": "index.js",
+  "scripts": {
+    "build:client": "webpack --mode development --watch",
+    "start:server": "nodemon node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taniel-P/applicants.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taniel-P/applicants/issues"
+  },
+  "homepage": "https://github.com/Taniel-P/applicants#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
