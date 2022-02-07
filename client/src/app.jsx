@@ -13,7 +13,7 @@ const App = (props) => {
       const amount = data.data / 100000000;
       setBalance(amount)
     })
-  }
+  };
 
   return (
     <div className="app">
